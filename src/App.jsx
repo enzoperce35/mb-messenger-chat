@@ -1,7 +1,7 @@
 "use client";
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
-import { FacebookProvider, CustomChat } from 'react-facebook';
+import { FacebookProvider, SendToMessenger } from 'react-facebook';
 import viteLogo from '/vite.svg';
 import './App.css';
 
@@ -31,8 +31,8 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
 
-      <FacebookProvider appId="910534807474102" chatSupport>
-        <CustomChat pageId="228502743687333" minimized={true} />
+      <FacebookProvider appId="910534807474102">
+        <SendToMessenger messengerAppId="inso88"  pageId="228502743687333" />
       </FacebookProvider>
     </>
   )
